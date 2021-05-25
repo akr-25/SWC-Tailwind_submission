@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailwindcss.css">
+    <title>Document</title>
+    <style>
+        .text-accent{
+            color: #02A689;
+        }
+        .bg-accent{
+            background-color: #02A689;
+        }
+        .text-grey{
+            color: #333333;
+        }
+        .text-blue-1000{
+            color: #514EFC;
+        }
+        .bg-greyish{
+            background-color: #F5F7F9;
+        }
+    </style>
+</head>
+<body  style="background-color: #f5f5f5">
+    <div class="">
+            <!-- nav bar -->
+            <div class="w-full flex flex-col sm:flex-row bg-white py-6 justify-center sm:justify-between items-center shadow-sm border-b-2">
+                <div class="flex items-center sm:border-r-2 px-16 ">
+                    <svg width="45" height="45" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.805267" width="32.4175" height="32.4175" rx="2.567" fill="#02A689"/>
+                        <path d="M11.1684 10.893H15.4316L11.9652 16.8845L12.9722 18.8181L17.5913 10.893H21.2435L24.7414 16.9651L21.2033 23.135H16.9333L20.4648 17.0255L19.3973 15.2262L14.7647 23.135H11.1728L7.67603 16.884L11.1684 10.893Z" fill="white"/>
+                    </svg>
+                    <p class="text-2xl font-extrabold font-sans ml-2 text-accent" >Directory</p>
+                    <!-- <div style="border: 1px solid #D4DADF; background-color: #D4DADF;" class="h-12 ml-20"></div> -->
+                </div>
+                <div class="flex items-center justify-around sm:border-l-2 border-gray-200 sm:py-2 py-4 mt-2 pr-10 bg-gray-100 sm:rounded-none rounded-full sm:bg-white">
+                    <!-- <div style="border: 1px solid #D4DADF; background-color: #D4DADF;" class="h-8 mr-2"></div> -->
+                    <svg class="ml-3" width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4999 6.01402C10.4999 6.60496 10.3835 7.19013 10.1573 7.73609C9.93121 8.28206 9.59971 8.77813 9.18191 9.19602C8.76401 9.61382 8.26794 9.94532 7.72197 10.1715C7.17601 10.3976 6.59085 10.514 5.9999 10.514C5.40895 10.514 4.82379 10.3976 4.27782 10.1715C3.73186 9.94532 3.23578 9.61382 2.81792 9.19602C2.40005 8.77813 2.06859 8.28206 1.84244 7.73609C1.61629 7.19013 1.4999 6.60496 1.4999 6.01402C1.4999 4.82054 1.974 3.67595 2.81792 2.83204C3.66183 1.98812 4.80642 1.51402 5.9999 1.51402C7.19337 1.51402 8.33796 1.98812 9.18191 2.83204C10.0258 3.67595 10.4999 4.82054 10.4999 6.01402ZM9.67991 10.754C8.47428 11.69 6.95727 12.1313 5.4377 11.9881C3.91813 11.845 2.51024 11.1281 1.50065 9.98342C0.491052 8.83873 -0.0443482 7.35231 0.00343178 5.82677C0.0512218 4.30122 0.678602 2.85122 1.75785 1.77197C2.83711 0.692717 4.2871 0.0653365 5.81265 0.0175465C7.3382 -0.0302365 8.82461 0.505167 9.96931 1.51477C11.114 2.52436 11.8309 3.93225 11.974 5.45182C12.1172 6.97138 11.6759 8.48839 10.7399 9.69402L13.7799 12.734C13.8536 12.8027 13.9127 12.8855 13.9537 12.9775C13.9947 13.0695 14.0167 13.1688 14.0185 13.2695C14.0203 13.3702 14.0017 13.4702 13.964 13.5636C13.9263 13.657 13.8701 13.7418 13.7989 13.813C13.7277 13.8843 13.6429 13.9404 13.5495 13.9781C13.4561 14.0158 13.3561 14.0344 13.2554 14.0326C13.1547 14.0308 13.0553 14.0088 12.9634 13.9678C12.8714 13.9268 12.7886 13.8677 12.7199 13.794L9.67991 10.754Z" fill="#1F2A33"/>
+                    </svg>
+                    <input type="text" class="ml-2 mr-10 focus:outline-none bg-gray-100 rounded-full sm:bg-white placeholder-black"placeholder="Quick Search">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-5 h-full ">
+
+                <div class="cols-span-1 flex flex-col justify-between sticky bg-greyish pt-20 border-r-2 md:visible invisible">
+                    <div class="self-end font-semibold">
+                        <p class="py-3 pr-20 bg-white pl-5 border-2 border-r-0 cursor-pointer">Search Result</p>
+                        <p class="py-3 pr-20 pl-5 cursor-pointer">All Team</p>
+                        <p class="py-3 pr-20 pl-5 cursor-pointer">Core</p>
+                        <p class="py-3 pr-20 pl-5 cursor-pointer">Developers</p>
+                        <p class="py-3 pr-20 pl-5 cursor-pointer">Designers</p>
+                        <p class="py-3 pr-20 pl-5 cursor-pointer">Mentors</p>
+
+                        <button class="self-center text-white text-lg font-semibold mt-32 mb-14 py-2 px-8 rounded-xl bg-accent focus:outline-none focus:ring "> + Contact </button>
+                    </div>
+                </div>
+
+                <div class="col-start-2 col-end-6 grid lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-2 md:grid-rows-3 sm:grid-cols-1 gap-3 md:ml-20 md:mr-36 sm:ml-0 sm:mr-10  mb-5 mt-5">
+                    <div class="h-auto shadow-md p-4 rounded w-11/12 bg-white flex flex-col items-center justify-between">
+                        <img class="w-20 h-auto" src="images/avatar.svg" alt="">
+                        <p class="text-accent font-bold">Teodoro Luck</p>
+                        <p class="text-grey font-semibold">Product Designer at Google</p>
+                        <p class="text-blue-1000 font-bold">@Core</p>
+                        <p class="text-s  mb-3">SWC 2018-2021</p>
+                        <div class="flex justify-center">
+                            <img class="px-2" src="images/msg.svg" alt="">
+                            <img src="images/phn.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="h-auto shadow-md p-4 rounded w-11/12 bg-white flex flex-col items-center justify-between">
+                        <img class="w-20 h-auto" src="images/avatar.svg" alt="">
+                        <p class="text-accent font-bold">Teodoro Luck</p>
+                        <p class="text-grey font-semibold">Product Designer at Google</p>
+                        <p class="text-blue-1000 font-bold">@Core</p>
+                        <p class="text-s  mb-3">SWC 2018-2021</p>
+                        <div class="flex justify-center">
+                            <img class="px-2" src="images/msg.svg" alt="">
+                            <img src="images/phn.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="h-auto shadow-md p-4 rounded w-11/12 bg-white flex flex-col items-center justify-between">
+                        <img class="w-20 h-auto" src="images/avatar.svg" alt="">
+                        <p class="text-accent font-bold">Teodoro Luck</p>
+                        <p class="text-grey font-semibold">Product Designer at Google</p>
+                        <p class="text-blue-1000 font-bold">@Core</p>
+                        <p class="text-s  mb-3">SWC 2018-2021</p>
+                        <div class="flex justify-center">
+                            <img class="px-2" src="images/msg.svg" alt="">
+                            <img src="images/phn.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="h-auto shadow-md p-4 rounded w-11/12 bg-white flex flex-col items-center justify-between">
+                        <img class="w-20 h-auto" src="images/avatar.svg" alt="">
+                        <p class="text-accent font-bold">Teodoro Luck</p>
+                        <p class="text-grey font-semibold">Product Designer at Google</p>
+                        <p class="text-blue-1000 font-bold">@Core</p>
+                        <p class="text-s  mb-3">SWC 2018-2021</p>
+                        <div class="flex justify-center">
+                            <img class="px-2" src="images/msg.svg" alt="">
+                            <img src="images/phn.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="h-auto shadow-md p-4 rounded w-11/12 bg-white flex flex-col items-center justify-between">
+                        <img class="w-20 h-auto" src="images/avatar.svg" alt="">
+                        <p class="text-accent font-bold">Teodoro Luck</p>
+                        <p class="text-grey font-semibold">Product Designer at Google</p>
+                        <p class="text-blue-1000 font-bold">@Core</p>
+                        <p class="text-s  mb-3">SWC 2018-2021</p>
+                        <div class="flex justify-center">
+                            <img class="px-2" src="images/msg.svg" alt="">
+                            <img src="images/phn.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="h-auto shadow-md p-4 rounded w-11/12 bg-white flex flex-col items-center justify-between">
+                        <img class="w-20 h-auto" src="images/avatar.svg" alt="">
+                        <p class="text-accent font-bold">Teodoro Luck</p>
+                        <p class="text-grey font-semibold">Product Designer at Google</p>
+                        <p class="text-blue-1000 font-bold">@Core</p>
+                        <p class="text-s  mb-3">SWC 2018-2021</p>
+                        <div class="flex justify-center">
+                            <img class="px-2" src="images/msg.svg" alt="">
+                            <img src="images/phn.svg" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>
